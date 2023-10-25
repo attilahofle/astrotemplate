@@ -1,23 +1,26 @@
 {
-  "name": "@example/blog",
+  "name": "@example/basics",
+  "type": "module",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "serve dist/",
+    "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.0.0",
-    "@astrojs/mdx": "^0.11.1",
-    "@astrojs/rss": "^2.0.0",
-    "@astrojs/sitemap": "^1.0.0",
-    "serve": "^14.0.1"
+    "@astrojs/tailwind": "^3.1.1",
+    "@fontsource/inter": "^4.5.15",
+    "astro": "^2.2.0",
+    "framer-motion": "^10.11.2",
+    "npm-check-updates": "^16.10.7",
+    "tailwindcss": "^3.3.1"
   },
   "devDependencies": {
-    "astro": "^2.0.0",
-    "@astrojs/renderer-preact": "^0.5.0"
+    "@astrojs/react": "^2.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

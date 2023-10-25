@@ -1,63 +1,39 @@
-![Astro](https://user-images.githubusercontent.com/2342458/230581871-dc3c1c5f-91a2-484c-8b5c-5065a6b99ff0.png)
-# Kinsta - Hello World - Static Site With Astro 🚀
+# Tailcast
 
-An example of how to deploy a static site built with Astro on Kinsta Hosting.
+Dark themed website template built on AstroJS, designed for technological startup business.
 
----
-Kinsta is a developer-centric cloud host / PaaS. We’re striving to make it easier for you to share your web projects with your users. You can focus on coding and building, and we'll take care of deployments with fast, scalable hosting. 
+## Tech stack:
 
-At Kinsta, Static Sites are free, and you can host up to 100 sites on your account for completely free.
+Astro, React, Tailwind, Framer Motion
 
-Kinsta offers 24/7 support via our chat system, which is always one click away in [MyKinsta](https://my.kinsta.com/) for customers with a paid plan or service.
+## Live link
+[https://tailcast.vercel.app/](https://tailcast.vercel.app/)
 
-If you only have a Static Site Hosting account, we have detailed [Static Site Hosting documentation](https://kinsta.com/docs/static-site-hosting/) available. You can also connect with developers and knowledgeable community members in the [Kinsta Community](https://community.kinsta.com/c/static-sites/22) forum.
+##  Project Structure
 
-- [Start your free trial](https://kinsta.com/signup/?product_type=app-db)
-- [Application Hosting](https://kinsta.com/application-hosting)
-- [Database Hosting](https://kinsta.com/database-hosting)
-- [Static Site Hosting](https://kinsta.com/static-site-hosting)
+```
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── assets
+│   │   ├── icons
+│   │   ├── images
+│   │   └── logos
+│   ├── components
+│   ├── layouts
+│   ├──  pages
+│   └── styles
+└── package.json
+```
 
-## Setup
-<details>
-<summary><strong>Static Site Hosting</strong> [click to expand]</summary>
+##  How to run
 
-### Dependency Management
+All commands are run from the root of the project, from a terminal:
 
-Kinsta automatically installs dependencies defined in your `package.json` file during the deployment process.
+| Command                | Action                                             |
+| :--------------------- | :------------------------------------------------- |
+| `npm install`          | Installs dependencies                              |
+| `npm run dev`          | Starts local dev server at `localhost:3000`        |
+| `npm run build`        | Build your production site to `./dist/`            |
+| `npm run preview`      | Preview your build locally, before deploying       |
 
-### Setting the Build Command, Node version, and Publish directory
-
-After connecting the repository, **Static Site Hosting** will automatically try to populate all the fields with the correct values.
-|  |  |
-|---|---|
-| Build command | `npm run build` |
-| Node version  |  18.16.0  |
-| Publish directory | `dist`  |
-
-### Deployment Lifecycle
-
-Whenever a deployment is initiated (through creating an application or re-deploying due to an incoming commit), the build command is run, followed by the deployment of the Publish Directory content.
-</details>
-
-<details>
-<summary><strong>Application Hosting</strong> [click to expand]</summary>
-
-### Dependency Management
-
-Kinsta automatically installs dependencies defined in your `package.json` file during the deployment process.
-
-### Port
-
-Kinsta automatically sets the `PORT` environment variable. You should **not** define it yourself and you should **not** hard-code it into the application. The `serve` package utilizes the port set by Kinsta automatically.
-
-### Start Command
-
-When deploying an application, Kinsta automatically creates a web process with `npm start` as the entry point. Make sure to use this command to run your server.
-
-### Deployment Lifecycle
-
-Whenever a deployment is initiated (through creating an application or re-deploying due to an incoming commit), the `npm build` command is run, followed by the `npm start` command.
-</details>
-
-## What is Astro
-Astro is a static site framework focusing on content-rich websites to deliver faster load times with less JavaScript. More information is available on the [astro.build](https://astro.build/) website.
